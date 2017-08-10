@@ -1,0 +1,30 @@
+------------------------------------
+Forma de compilacion en linux 
+(recomendada para ver menos errores)
+------------------------------------
+	Para compilar de forma separada cada archivo .cpp use la opcion -c
+	genera un archivo objeto (algoritmos.o)
+	$ g++ -c algoritmos.cpp
+
+	Después compile el otro archivo .cpp, genera un archivo objeto (principal.o)
+	$ g++ -c principal.cpp
+
+	Ahora Enlace los dos archivos y cree el ejecutable
+	$ g++ principal.o algoritmos.o -o main.exe
+
+
+----------------------------------------
+Forma abreviada de compilación en linux 
+(ve errores de ambos archivos a la vez)
+----------------------------------------
+	$ g++ principal.cpp algoritmos.cpp -o main.exe
+
+
+-----------------------------------------------
+Compilación en algun entorno de desarrollo o IDE
+como devcpp, codeblocks, etc (windows y linux
+------------------------------------------------
+	Construya un proyecto y adiciones o cree los dos
+	archivos .cpp (algoritmos.cpp y principal.cpp)
+
+
